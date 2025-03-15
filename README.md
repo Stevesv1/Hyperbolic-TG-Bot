@@ -49,8 +49,11 @@ sudo apt update && sudo apt install -y screen nano
 - Create/copy your API key
 
 ## 🛠️ Environment Set Up
-- Create .env file using the below command
-- nano .env and then input your Telegram Bot Token
+- Create `.env` file using the below command
+```bash
+nano .env
+```
+- Now input your Telegram Bot Token
 ```bash
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 ```
