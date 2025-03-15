@@ -48,7 +48,7 @@ sudo apt update && sudo apt install -y screen nano
 - Go to Settings → API Keys
 - Create/copy your API key
 
-## 📁 Environment Set Up
+## 🛠️ Environment Set Up
 - Create .env file using the below command
 - nano .env and then input your Telegram Bot Token
 ```bash
@@ -56,7 +56,7 @@ TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 ```
 - Now save this file using `Ctrl + X` and then `Y` and then press `Enter`
 
-## ▶️ Run the bot
+## ⚡ Run the bot
 - Create a screen session
 ```bash
 screen -S hyperbolic
