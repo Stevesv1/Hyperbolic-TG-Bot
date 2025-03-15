@@ -210,15 +210,15 @@ async function handleModelInput(ctx, input) {
 bot.command('start', (ctx) => {
   if (!ctx.session.apiKey) {
     ctx.reply(
-      '🌟 *Welcome to Hyperbolic AI Telegram Bot* 🌐\n\n' +
-      'To get started, please send your Hyperbolic API Key:\n' +
+      '*Welcome to Hyperbolic AI Bot*\n\n' +
+      'To get started, send your Hyperbolic API Key:\n' +
       '1. Visit [Hyperbolic Website](https://app.hyperbolic.xyz/) and Log In\n' +
       '2. Go to the *Settings* section\n' +
-      '3. Copy your existing key or generate a new one\n' +
+      '3. Copy your API Key\n' +
       '4. Paste it here\n\n' +
       '🛡️ *Security Notice:*\n' +
-      '- Your API key is stored securely and *never shared*\n' +
-      '- You can remove it anytime using /remove command\n' +
+      '- Your API key is stored securely\n' +
+      '- You can remove it using /remove\n' +
       '- This bot only stores your key for session access\n\n',
       {
         parse_mode: 'Markdown',
