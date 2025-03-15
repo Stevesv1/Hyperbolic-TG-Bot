@@ -25,11 +25,16 @@ curl -sSL https://raw.githubusercontent.com/zunxbt/installation/main/node.sh | b
 ```
 2. **Clone Repository**
 ```bash
-git clone https://github.com/Stevesv1/Hyperbolic-TG-Bot.git && cd Hyperbolic-TG-Bot
+rm -rf Hyperbolic-TG-Bot && git clone https://github.com/Stevesv1/Hyperbolic-TG-Bot.git && cd Hyperbolic-TG-Bot
 ```
 3. **Install dependencies**
 ```bash
 npm install axios@^1.8.3 dotenv@^16.4.7 telegraf@^4.16.3 telegraf-session-local@^2.1.1
+```
+
+4. **Install `screen` and `nano` package**
+```bash
+sudo apt update && sudo apt install -y screen nano
 ```
 
 ## ⚙️ Configuration
@@ -52,9 +57,15 @@ TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 - Now save this file using `Ctrl + X` and then `Y` and then press `Enter`
 
 ## ▶️ Run the bot
+- Create a screen session
+```bash
+screen -S hyperbolic
+```
+- Now run the below command
 ```bash
 node bot.js
 ```
+- Now detach from this screen session using `Ctrl + A`, then press `D`
 
 ## 📜 Commands
 
