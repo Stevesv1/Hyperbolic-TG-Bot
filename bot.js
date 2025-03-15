@@ -210,7 +210,7 @@ async function handleModelInput(ctx, input) {
 bot.command('start', (ctx) => {
   if (!ctx.session.apiKey) {
     ctx.reply(
-      '🌟 *Welcome to Hyperbolic AI Assistant* 🌐\n\n' +
+      '🌟 *Welcome to Hyperbolic AI Telegram Bot* 🌐\n\n' +
       'To get started, please send your Hyperbolic API Key:\n' +
       '1. Visit [Hyperbolic Website](https://app.hyperbolic.xyz/) and Log In\n' +
       '2. Go to the *Settings* section\n' +
